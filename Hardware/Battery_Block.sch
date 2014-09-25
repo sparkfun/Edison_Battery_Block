@@ -16073,7 +16073,7 @@ Various fiducial points for machine vision alignment.</description>
 <hole x="2.93" y="1.98" drill="2"/>
 </package>
 <package name="DF40C-70DP-0.4(51)">
-<circle x="7.3" y="1" radius="0.1" width="0.3048" layer="21"/>
+<circle x="7.7" y="1" radius="0.1" width="0.3048" layer="21"/>
 <wire x1="-8.4" y1="1.44" x2="8.4" y2="1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="1.44" x2="8.4" y2="-1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="-1.44" x2="-8.4" y2="-1.44" width="0.2032" layer="21"/>
@@ -16148,6 +16148,10 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="68" x="-6.4" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="70" x="-6.8" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC4" x="-7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC3" x="-7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC1" x="7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC2" x="7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 </package>
 <package name="DF40-XC-(X.X)-70DS-0.4V(51)">
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="1"/>
@@ -18061,7 +18065,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="175.26" y1="73.66" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VIN" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="VCC"/>
 <pinref part="U1" gate="G$1" pin="VIN"/>
@@ -18101,7 +18105,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="101.6" y1="109.22" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="VBAT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VBAT"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -18124,6 +18128,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="109.22" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
+<junction x="175.26" y="111.76"/>
 </segment>
 </net>
 <net name="N$2" class="0">
